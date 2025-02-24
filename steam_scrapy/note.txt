@@ -1,0 +1,14 @@
+The scrapy program was executed from 2024-05-10 to 2024-05-15 last for 5 days 
+    enough data collected so terminated in advance
+    cannot send requests too frequently. Thus, data collected with dalay (see settings.py in steam_scrapy project)
+
+the data pre-processing process includes two steps, first is with sql commands, the second part is the review texts cleaning through python libs, which will be used before feed to llm's tokenlizer 
+
+Data collected includes some duplicated reords.
+After duplication removal there are:
+    - 843 game entities
+    - 8,196,961 user reviews
+    - 4014 users who made 50+ reviews
+    - 9666 users who made 30+ reviews
+The data cleaning SQL and common query sqls recorded in file steamdata_query.sql.
+
